@@ -1,1 +1,4 @@
 next folder
+good 
+bad
+task
