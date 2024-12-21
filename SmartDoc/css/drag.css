@@ -1,0 +1,39 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator-container{
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2{
+  text-transform: uppercase;
+}
+
+input{
+  padding: 10px;
+  border-radius: 7px;
+}
+
+button{
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.calculator{
+  display: block;
+  height: 300px;
+  width: 400px;
+  border: 2px solid;
+  border-radius: 7px;
+  background-color: yellowgreen;
+}

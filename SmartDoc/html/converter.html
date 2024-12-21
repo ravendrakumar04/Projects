@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartDoc</title>
+    <link rel="stylesheet" href="../css/converter.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../html/home.html">
+            <div class="logo">
+                <img src="../Assets/Vista Logos/logo-png.png" alt="" >
+            </a>
+            </div>
+            <div class="links">
+                <ul>
+                <li><a href="../html/home.html">home</a></li>
+                <li><a href="../html/converter.html">converter</a></li>
+                <li><a href="../html/editor.html">pdf editor</a></li>
+                <li><a href="../html/pptgenerator.html">PPT generator</a></li>
+                <li><a href="../html/summerization.html">Summerization</a></li>
+            </ul>
+            </div>
+                <div class="menu">
+                    <div class="menu-items"></div>
+                    <div class="menu-items"></div>
+                    <div class="menu-items"></div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <section>
+        <h2 class="head">PDF convertor</h2>
+        <div class="drop-container" id="drop-container">
+            <div class="drop">
+                <label for="input" class="drop-area" id="drop-area">
+                    <input type="file" text="" accept="pdf"  hidden id="input" >
+                    <img src="../Assets/upload.png" alt="" class="upload">
+                    <p>Drag and drop files here or <br>click to upload</p>
+                    <div class="btn">Browse File</div>
+                </label>
+            </div>
+        </div>
+    </section>
+    
+<footer>
+    
+    <div class="footer-container">
+    <div class="footer-logo">
+        <img src="../Assets/Vista Logos/logo-png.png" alt="" >
+        
+    <div class="footer-head">
+        <h2>Empowering Your Productivity <br> with SmartDoc</h2>
+    </div>
+    </div>
+
+        <div class="footer-contain">
+        <div class="Quick-links">
+            <h2>Quick link </h2>
+            
+            <li><a href="../html/home.html">home</a></li>
+            <li><a href="../html/converter.html">converter</a></li>
+            <li><a href="../html/editor.html">pdf editor</a></li>
+            <li><a href="../html/pptgenerator.html">PPT generator</a></li>
+            <li><a href="../html/summerization.html">Summerization</a></li>
+        
+    </div>
+
+    <div class="Other-tools">
+        <h2 class="other-toolhead">Other Tools</h2>
+        <div class="other-tool">
+                <li><a href="">Pdf to word</a></li>
+                <li><a href="">pdf to image</a></li>
+                <li><a href="">merge pdf</a></li>
+                <li><a href="">split pdf</a></li>
+            </div>
+        </div>
+    <div class="company-container">
+        <h2 class="company-head">company</h2>
+            <div class="company">
+                <li><a href="">about</a></li>
+                <li><a href="../html/blog.html">blog</a></li>
+                <li><a href="../html/termsofuse.html">terms of use</a></li>
+                <li><a href="../html/policy.html">privacy policy</a></li>
+            </div>
+    </div>
+
+    <div class="contact-us">
+        <h2 class="contact-head">Contact Us</h2>
+        <li class="contact">
+            <p><a href="mailto:smartdoc@gmail.com"><strong>📧Email : </strong>smartdoc@gmail.com</a></p>
+        </li>
+    </div>
+</div>
+</div>
+<div class="issues">
+    <a href=""><p>if you are faced any issues click here</p></a>
+</div>
+<p class="copy-right">@2024 SmartDoc Inc.All rights are reserved.</p>
+</footer>
+
+
+<script>
+    // Toggle button creation code
+const menu=document.querySelector(".menu");
+const menulist=document.querySelector("nav ul");
+menu.addEventListener('click',()=>{
+menulist.classList.toggle('showmenu');
+})
+// dragover event code
+
+dropArea=document.getElementById("drop-area");
+inputFile=document.getElementById("input");
+dropContainer=document.getElementById('drop-container');
+
+dropArea.addEventListener("dragover",function(e){
+e.preventDefault();
+});
+// drop event code
+dropArea.addEventListener("drop",function(e){
+e.preventDefault();
+let file=inputFile.files=e.dataTransfer.files;
+console.log(file);
+if(file==file){
+alert("file uploaded successfully");
+}
+
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,638 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/*Responsive navbar*/
+.navbar{
+    font-size: small;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(253, 253, 253, 0.918);
+}
+.navbar li{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: bold;
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+}
+
+.logo img{
+    margin: 0 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.navbar li :hover{
+    color: blue;
+
+}
+
+.menu-items{
+    border: 1px solid;
+    width: 20px;
+    margin: 3px;
+}
+
+.menu{
+    display: none;
+}
+
+.drop-container{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(pink,rgb(11, 230, 230));
+}
+
+.drop{
+    width: 70%;
+    height: 70%;
+    border:dashed ;
+    border-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-area{
+    text-align: center;
+}
+
+.drop-area p{
+    line-height: 30px;
+    font-size: large;
+    font-weight: bold;
+    color: beige;
+}
+.upload{
+    max-height: 100px;
+    max-width: 80px;
+    align-items: center;
+    
+}
+
+.input{
+    padding: 10px;
+    border: 20px;
+}
+
+.btn{
+    max-width: 30px;
+    max-width: 150px;
+    padding: 15px;
+    border: solid 2px;
+    border-radius: 5px;
+    border-color: white;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+
+}
+
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+
+/* footer */
+
+
+
+footer{
+    margin-top: 500px;
+    background-color: #f7f7f7;
+}
+.footer-container h2{
+    color: #0077cc;
+}
+
+.footer-container{
+    display: flex;
+    gap:150px ;
+}
+
+.footer-contain{
+    padding-top: 50px;
+    display: flex;
+    gap: 60px;
+}
+
+.footer-logo img{
+    margin: 20px 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.footer-head{
+    margin: 5px 20px;
+}
+
+.Quick-links li{
+    list-style: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+
+
+.Quick-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.other-tool li{
+    list-style: none;
+}
+
+
+.other-tool a{ 
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 18px;
+}
+
+.company li{
+    list-style: none;
+}
+
+.company a{
+    
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 18px;
+}
+
+.contact{
+    list-style: none;
+    font-size: 18px;
+}
+.issues a{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #0077cc;
+}
+
+.copy-right{
+    padding: 20px;
+    border-top: 1px solid #0e0d0d;
+    font-size: 18px;
+}
+
+.other-tool a:hover{
+    color: blue;
+}
+
+.Quick-links a:hover{
+    color: blue;
+}
+
+.contact:hover{
+    color: blue;
+}
+
+.company a:hover{
+    color: blue;
+}
+
+
+@media all and (max-width: 767px) {
+
+    /* navbar */
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar li{
+        display: block;
+        font-size: 18px;
+        padding: 10px;
+    }
+    ul{
+        text-align: center;
+        display: none;
+        margin: 10px;
+    }
+    .logo{
+        align-self: flex-start;
+    }
+    .logo img{
+        height:50px;
+        width: 50px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top:20px;
+        right: 20px;
+        align-self: flex-end;
+    }
+
+    .showmenu{
+        display: block;
+    }
+
+    /* footer */
+
+    footer{
+        margin-top: 2100px;
+        background-color: #f7f7f7;
+    }
+    
+    .footer-container{
+        display: flex;
+        gap:80px ;
+    }
+    
+    .footer-contain{
+        padding-top: 50px;
+        display: flex;
+        gap: 60px;
+    }
+    
+    .footer-logo img{
+        margin: 20px 40px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .footer-head{
+        margin: 5px 20px;
+    }
+
+    .Quick-links{
+        margin: 5px 20px;
+    }
+    
+
+
+    .Quick-links li{
+        list-style: none;
+        padding-bottom: 5px;
+        padding-top: 2px;
+    }
+    
+    
+    .Quick-links a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    .Other-tools{
+        margin: 5px 20px;
+    }
+    
+    .other-tool {
+        list-style: none;
+    }
+    
+    
+    .other-tool a{ 
+        display: block;
+        text-decoration: none;
+        padding-bottom: 5px;
+        padding-top: 2px;
+        color: black;
+        font-size: 18px;
+    }
+    
+    .company{
+        list-style: none;
+    }
+    .company-container{
+        margin: 5px 20px;
+    }
+    .company a{
+        display: block;
+        text-decoration: none;
+        padding-bottom: 5px;
+        padding-top: 2px;
+        color: black;
+        font-size: 18px;
+    }
+    
+    .contact-us{
+        margin: 5px 20px;
+        list-style: none;
+        font-size: 18px;
+    }
+    .issues{
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    .copy-right{
+        padding: 20px;
+        border-top: 1px solid #0e0d0d;
+        font-size: 18px;
+    }
+    
+    .other-tool a:hover{
+        color: blue;
+    }
+    
+    .Quick-links a:hover{
+        color: blue;
+    }
+    
+    .contact:hover{
+        color: blue;
+    }
+    
+    .company a:hover{
+        color: blue;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .navbar li{
+        font-size: 12px;
+    }
+
+    /* footer */
+
+    
+footer{
+    margin-top: 800px;
+    background-color: #f7f7f7;
+}
+
+.footer-container{
+    display: flex;
+    gap:50px ;
+}
+
+.footer-contain{
+    padding-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+.footer-contain h2{
+    padding-bottom: 5px;
+}
+.footer-logo img{
+    margin: 20px 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.footer-head{
+    margin: 5px 20px;
+}
+
+.Quick-links{
+    margin: 5px 20px;
+}
+
+.Quick-links li{
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+
+.Quick-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.Other-tools{
+    margin: 5px 20px;
+}
+
+.other-tool li{
+    list-style: none;
+    padding-bottom: 7px;
+    padding-top: 2px;
+}
+
+
+.other-tool a{ 
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 18px;
+}
+
+.company li{
+    list-style: none;
+    padding-bottom: 7px;
+    padding-top: 2px;
+}
+.company-container{
+    margin: 5px 20px;
+}
+.company a{
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 18px;
+}
+
+.contact-us{
+    margin: 5px 20px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.contact {
+    text-decoration: none;
+}
+
+.issues{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.copy-right{
+    padding: 20px;
+    border-top: 1px solid #0e0d0d;
+    font-size: 18px;
+}
+
+.other-tool a:hover{
+    color: blue;
+}
+
+.Quick-links a:hover{
+    color: blue;
+}
+
+.contact:hover{
+    color: blue;
+}
+
+.company a:hover{
+    color: blue;
+}
+    
+}
+
+
+@media all and (min-width:1440px){
+    .navbar li{
+        font-size: 20px;
+    }
+
+    /* footer */
+
+    footer{
+        margin-top: 300px;
+        background-color: #f7f7f7;
+    }
+    
+    .footer-container{
+        display: flex;
+        gap:50px ;
+    }
+    
+    .footer-contain{
+        padding-top: 40px;
+        display: flex;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+    .footer-contain h2{
+        padding-bottom: 5px;
+    }
+    .footer-logo img{
+        margin: 20px 40px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .footer-head{
+        margin: 5px 20px;
+    }
+    
+    .Quick-links{
+        margin: 5px 20px;
+    }
+    
+    .Quick-links li{
+        list-style: none;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    
+    
+    .Quick-links a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    
+    .Other-tools{
+        margin: 5px 20px;
+    }
+    
+    .other-tool li{
+        list-style: none;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+    
+    
+    .other-tool a{ 
+        display: block;
+        text-decoration: none;
+        padding-bottom: 5px;
+        padding-top: 2px;
+        color: black;
+        font-size: 20px;
+    }
+    
+    .company li{
+        list-style: none;
+        padding-bottom: 7px;
+        padding-top: 5px;
+    }
+    .company-container{
+        margin: 5px 20px;
+    }
+    .company a{
+        display: block;
+        text-decoration: none;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        color: black;
+        font-size: 20px;
+    }
+    
+    .contact-us{
+        margin: 5px 20px;
+        list-style: none;
+        font-size: 20px;
+    }
+    
+    .contact {
+        text-decoration: none;
+    }
+    
+    .issues{
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    .copy-right{
+        padding: 20px;
+        border-top: 1px solid #0e0d0d;
+        font-size: 20px;
+    }
+    
+    .other-tool a:hover{
+        color: blue;
+    }
+    
+    .Quick-links a:hover{
+        color: blue;
+    }
+    
+    .contact:hover{
+        color: blue;
+    }
+    
+    .company a:hover{
+        color: blue;
+    }
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartDoc - The Future of Document Management</title>
+    <style>
+        *{
+            flex-wrap: wrap;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header-container{
+        background: #0077cc;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        /*Responsive navbar*/
+.navbar{
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(253, 253, 253, 0.918);
+}
+.navbar li{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0 20px;
+    font-size: 17px;
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+
+.logo img{
+    margin: 0 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.navbar li :hover{
+    color: blue;
+
+}
+
+.menu-items{
+    border: 1px solid;
+    width: 20px;
+    margin: 3px;
+}
+
+.menu{
+    display: none;
+}
+.container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0077cc;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: disc;
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer{
+    margin-top: 500px;
+    background-color: #f7f7f7;
+}
+
+.footer-container{
+    display: flex;
+    gap:150px ;
+}
+
+.footer-contain{
+    padding-top: 50px;
+    display: flex;
+    gap: 60px;
+}
+
+.footer-logo img{
+    margin: 20px 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.footer-head{
+    margin: 5px 20px;
+}
+
+.Quick-links li{
+    list-style: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+
+
+.Quick-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.other-tool li{
+    list-style: none;
+}
+
+
+.other-tool a{ 
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 18px;
+}
+
+.company li{
+    list-style: none;
+}
+
+.company a{
+    
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 18px;
+}
+
+.contact{
+    list-style: none;
+    font-size: 18px;
+}
+.issues{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.copy-right{
+    padding: 20px;
+    border-top: 1px solid #0e0d0d;
+    font-size: 18px;
+}
+
+.other-tool a:hover{
+    color: blue;
+}
+
+.Quick-links a:hover{
+    color: blue;
+}
+
+.contact:hover{
+    color: blue;
+}
+
+.company a:hover{
+    color: blue;
+}
+
+
+@media all and (max-width:767px) {
+
+    /* navbar */
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar li{
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+    ul{
+        text-align: center;
+        display: none;
+        margin: 10px;
+    }
+    .logo{
+        align-self: flex-start;
+    }
+    .logo img{
+        height:50px;
+        width: 50px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top:20px;
+        right: 20px;
+        align-self: flex-end;
+    }
+
+    .showmenu{
+        display: block;
+    }
+    /* footer */
+    
+
+    /*footer  */
+    footer{
+        margin-top: 200px;
+        background-color: #f7f7f7;
+    }
+    
+    .footer-container{
+        display: flex;
+        gap:80px ;
+    }
+    
+    .footer-contain{
+        padding-top: 50px;
+        display: flex;
+        gap: 60px;
+    }
+    
+    .footer-logo img{
+        margin: 20px 40px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .footer-head{
+        margin: 5px 20px;
+    }
+
+    .Quick-links{
+        margin: 5px 20px;
+    }
+    
+
+
+    .Quick-links li{
+        list-style: none;
+        padding-bottom: 5px;
+        padding-top: 2px;
+    }
+    
+    
+    .Quick-links a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    .Other-tools{
+        margin: 5px 20px;
+    }
+    
+    .other-tool {
+        list-style: none;
+    }
+    
+    
+    .other-tool a{ 
+        display: block;
+        text-decoration: none;
+        padding-bottom: 5px;
+        padding-top: 2px;
+        color: black;
+        font-size: 18px;
+    }
+    
+    .company{
+        list-style: none;
+    }
+    .company-container{
+        margin: 5px 20px;
+    }
+    .company a{
+        display: block;
+        text-decoration: none;
+        padding-bottom: 5px;
+        padding-top: 2px;
+        color: black;
+        font-size: 18px;
+    }
+    
+    .contact-us{
+        margin: 5px 20px;
+        list-style: none;
+        font-size: 18px;
+    }
+    .issues{
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+    
+    .copy-right{
+        padding: 20px;
+        border-top: 1px solid #0e0d0d;
+        font-size: 18px;
+    }
+    
+    .other-tool a:hover{
+        color: blue;
+    }
+    
+    .Quick-links a:hover{
+        color: blue;
+    }
+    
+    .contact:hover{
+        color: blue;
+    }
+    
+    .company a:hover{
+        color: blue;
+    }
+}
+
+
+@media ((min-width:768px) and (max-width:1023px)) {
+    .navbar li{
+        font-size: 15px;
+    }
+    
+/* footer */
+
+footer{
+    margin-top: 900px;
+    background-color: #f7f7f7;
+}
+
+.footer-container{
+    display: flex;
+    gap:50px ;
+}
+
+.footer-contain{
+    padding-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.footer-logo img{
+    margin: 20px 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.footer-head{
+    margin: 5px 20px;
+}
+
+.Quick-links{
+    margin: 5px 20px;
+}
+
+
+
+.Quick-links li{
+    list-style: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+
+
+.Quick-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.Other-tools{
+    margin: 5px 20px;
+}
+
+ li{
+    list-style: none;
+}
+
+
+.other-tool a{ 
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 18px;
+}
+
+.company{
+    list-style: none;
+}
+.company-container{
+    margin: 5px 20px;
+}
+.company a{
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    color: black;
+    font-size: 18px;
+}
+
+.contact-us{
+    margin: 5px 20px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.contact {
+    text-decoration: none;
+}
+
+.issues{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.copy-right{
+    padding: 20px;
+    border-top: 1px solid #0e0d0d;
+    font-size: 18px;
+}
+
+.other-tool a:hover{
+    color: blue;
+}
+
+.Quick-links a:hover{
+    color: blue;
+}
+
+.contact:hover{
+    color: blue;
+}
+
+.company a:hover{
+    color: blue;
+}
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <a href="../html/home.html">
+            <div class="logo">
+                <img src="../Assets/Vista Logos/logo-png.png" alt="" >
+            </a>
+            </div>
+            <div class="links">
+                <ul>
+                <li><a href="../html/home.html">home</a></li>
+                <li><a href="../html/converter.html">converter</a></li>
+                <li><a href="../html/editor.html">pdf editor</a></li>
+                <li><a href="../html/pptgenerator.html">PPT generator</a></li>
+                <li><a href="../html/summerization.html">Summerization</a></li>
+            </ul>
+            </div>
+                <div class="menu">
+                    <div class="menu-items"></div>
+                    <div class="menu-items"></div>
+                    <div class="menu-items"></div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+
+    <div class="container">
+
+        <div class="header-container">
+            <h1>SmartDoc</h1>
+            <p>The Future of Document Management and Presentation</p>
+        </div>
+
+        <h2>What is SmartDoc?</h2>
+        <p>SmartDoc is an innovative platform that leverages artificial intelligence to simplify document management and enhance presentation creation. It combines advanced AI algorithms with user-friendly tools, making it a perfect solution for students, professionals, and businesses alike.</p>
+
+        <h2>Key Features of SmartDoc:</h2>
+        <ul>
+            <li><strong>Document Summarization:</strong> Quickly extract key points from lengthy documents with AI-powered summarization.</li>
+            <li><strong>PDF Editing:</strong> Annotate, merge, split, or convert PDFs with ease.</li>
+            <li><strong>Customizable PPT Generation:</strong> Generate professional presentations effortlessly by analyzing document content.</li>
+        </ul>
+
+        <h2>Why Choose SmartDoc?</h2>
+        <p>SmartDoc isn’t just another document management tool; it’s a productivity enhancer. Here’s why:</p>
+        <ul>
+            <li><strong>AI-Powered Efficiency:</strong> Minimize manual effort and focus on what matters most.</li>
+            <li><strong>User-Friendly Interface:</strong> Accessible to users of all technical backgrounds.</li>
+            <li><strong>Open Source:</strong> Encourages collaboration and innovation as a community-driven project.</li>
+        </ul>
+
+        <h2>The Vision Behind SmartDoc</h2>
+        <p>SmartDoc aims to empower users with cutting-edge technology. With a completion target of April 2025, it represents the future of document and presentation management, saving time while boosting creativity and productivity.</p>
+
+        <h2>Who Can Benefit from SmartDoc?</h2>
+        <ul>
+            <li><strong>Students:</strong> Simplify research and presentation tasks.</li>
+            <li><strong>Professionals:</strong> Streamline workflow with efficient tools.</li>
+            <li><strong>Businesses:</strong> Enhance team collaboration and productivity.</li>
+        </ul>
+
+        <h2>Join the SmartDoc Revolution</h2>
+        <p>Stay tuned for updates as we work toward launching this groundbreaking platform. Together, let’s unlock the full potential of AI in document management and presentation creation.</p>
+    </div>
+
+    
+<footer>
+    
+    <div class="footer-container">
+    <div class="footer-logo">
+        <img src="../Assets/Vista Logos/logo-png.png" alt="" >
+        
+    <div class="footer-head">
+        <h2>Empowering Your Productivity <br> with SmartDoc</h2>
+    </div>
+    </div>
+
+        <div class="footer-contain">
+        <div class="Quick-links">
+            <h2>Quick link </h2>
+            
+            <li><a href="../html/home.html">home</a></li>
+            <li><a href="../html/converter.html">converter</a></li>
+            <li><a href="../html/editor.html">pdf editor</a></li>
+            <li><a href="../html/pptgenerator.html">PPT generator</a></li>
+            <li><a href="../html/summerization.html">Summerization</a></li>
+        
+    </div>
+
+    <div class="Other-tools">
+        <h2 class="other-toolhead">Other Tools</h2>
+        <div class="other-tool">
+                <li><a href="">Pdf to word</a></li>
+                <li><a href="">pdf to image</a></li>
+                <li><a href="">merge pdf</a></li>
+                <li><a href="">split pdf</a></li>
+            </div>
+        </div>
+    <div class="company-container">
+        <h2 class="company-head">company</h2>
+            <div class="company">
+                <li><a href="">about</a></li>
+                <li><a href="../html/blog.html">blog</a></li>
+                <li><a href="../html/termsofuse.html">terms of use</a></li>
+                <li><a href="../html/policy.html">privacy policy</a></li>
+            </div>
+    </div>
+
+    <div class="contact-us">
+        <h2 class="contact-head">Contact Us</h2>
+        <li class="contact">
+            <p><a href="mailto:smartdoc@gmail.com"><strong>📧Email : </strong>smartdoc@gmail.com</a></p>
+        </li>
+    </div>
+</div>
+</div>
+<div class="issues">
+    <a href=""><p>if you are faced any issues click here</p></a>
+</div>
+<p class="copy-right">@2024 SmartDoc Inc.All rights are reserved.</p>
+</footer>
+    <script>
+        const menu=document.querySelector('.menu');
+        const menulist=document.querySelector('nav ul');
+        menu.addEventListener('click',()=>{
+            menulist.classList.toggle('showmenu');
+        });
+
+    </script>
+</body>
+</html>
